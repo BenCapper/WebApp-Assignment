@@ -12,6 +12,7 @@ const campus = {
       title: 'Campus',
       campus: campusStore.getCampus(campusId),
     };
+    logger.info('about to render', viewData.campus);
     response.render('campus', viewData);
   },
   

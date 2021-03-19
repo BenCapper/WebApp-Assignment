@@ -19,9 +19,10 @@ const campusStore = {
   getBuilding(id, buildingId) {
     const campus = this.getCampus(id);
     const building = campus.building;
-    const foundBuild = building.find(building => building.id === buildingId);
+    const foundBuild = building.find(buildings => buildings.id === buildingId);
     return foundBuild;
   },
+  
 
   addCampus(campus) {
     this.store.add(this.collection, campus);
@@ -57,9 +58,9 @@ const campusStore = {
 
   },
   
-  addRoom(id ) {
-    const campus = this.getCampus(id);
-
+  addRoom(id, buildingId, room) {
+    const building = this.getBuilding(id, buildingId);
+    building.room.push(room);
   },
 };
 

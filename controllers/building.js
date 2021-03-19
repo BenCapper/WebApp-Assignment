@@ -6,13 +6,16 @@ const uuid = require('uuid');
 
 const building = {
   index(request, response) {
-    const buildingId = request.params.id;
-    logger.debug('building id = ' + buildingId);
+    const campusId = request.params.id;
+    const buildingId = request.params.buildingid;
+    logger.debug(`Reading building ${buildingId} from Campus ${campusId}`);
     const viewData = {
       title: 'building',
-      building: campusStore.getCampus(buildingId),
+      building: campusStore.getBuilding(campusId, buildingId),
+      campus: campusStore.getCampus(campusId),
     };
-    response.render('campus', viewData);
+    logger.info('about to render', viewData.building);
+    response.render('building', viewData);
   },
   
   deleteRoom(request, response) {
@@ -25,14 +28,15 @@ const building = {
   
   addRoom(request, response) {
     const campusId = request.params.id;
-    const campus = campusStore.getCampus(campusId);
+    const buildingId = request.params.buildingid
+    const building = campusStore.getBuilding(campusId,buildingId);
     const newRoom = {
       id: request.body.id,
-      capacity: request.body.capacity,
-      equipment: request.body.equipment,
+      capacity: 20,
+      equipment: "none",
     };
-    campusStore.addRoom(campusId, newRoom);
-    response.redirect('/campus/' + campusId);
+    campusStore.addRoom(campusId, buildingId, newRoom);
+    response.redirect('/building/' + campusId + '/viewroom/' + buildingId);
   },
 
   updateRoom(request, response) {

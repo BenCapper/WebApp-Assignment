@@ -22,6 +22,36 @@
               "id": "3",
               "capacity": "30",
               "equipment": "Projector"
+            },
+            {
+              "id": "7",
+              "capacity": 20,
+              "equipment": "none"
+            },
+            {
+              "id": "8",
+              "capacity": 20,
+              "equipment": "none"
+            },
+            {
+              "id": "9",
+              "capacity": 20,
+              "equipment": "none"
+            },
+            {
+              "id": "4",
+              "capacity": 20,
+              "equipment": "none"
+            },
+            {
+              "id": "4",
+              "capacity": 20,
+              "equipment": "none"
+            },
+            {
+              "id": "6",
+              "capacity": 20,
+              "equipment": "none"
             }
           ]
         },
@@ -52,12 +82,6 @@
           "roomamount": 0,
           "phone": "08438247932",
           "room": []
-        },
-        {
-          "id": "dsf",
-          "roomamount": 0,
-          "phone": "dsf",
-          "room": []
         }
       ]
     },
@@ -83,6 +107,16 @@
               "id": "3",
               "capacity": "30",
               "equipment": "Projector"
+            },
+            {
+              "id": "4",
+              "capacity": 20,
+              "equipment": "none"
+            },
+            {
+              "id": "5",
+              "capacity": 20,
+              "equipment": "none"
             }
           ]
         },
@@ -135,9 +169,6 @@
           "room": []
         }
       ]
-    },
-    {
-      "id": "hfg"
     }
   ]
 }

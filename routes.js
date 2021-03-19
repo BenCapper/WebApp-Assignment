@@ -16,9 +16,13 @@ router.get('/', start.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 router.get('/campus/:id', campus.index);
-router.get('/building/:id', building.index);
+router.get('/building/:id/build/:buildingid/addRoom', building.index);
+router.get('/dashboard/deleteCampus/:id', dashboard.deleteCampus);
+router.get('/campus/:id/deleteBuilding/:buildingid', campus.deleteBuilding);
+router.get('/building/:buildingid/deleteRoom/:roomid', building.deleteRoom);
+router.get('/building/:id/viewroom/:buildingid', building.index);
 router.post('/campus/:id/addBuilding', campus.addBuilding);
-router.post('/building/:id/addRoom', building.addRoom);
+router.post('/building/:id/build/:buildingid/addRoom', building.addRoom);
 router.post('/dashboard/addCampus', dashboard.addCampus);
 
 
