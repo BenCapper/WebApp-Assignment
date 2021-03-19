@@ -1,0 +1,15 @@
+<form class="ui stacked segment form" action="/campus/{{campus.id}}/addBuilding" method="POST">
+  <div class="two fields">
+    <div class="field">
+      <label for="id">ID</label>
+      <input type="text" name="id" autofocus required title = "Please include a valid ID"
+      placeholder="ID">
+    </div>
+    <div class="field">
+      <label for="phone">Phone No.</label>
+      <input type="text" name="phone" required title = "Please include a valid Phone Number"
+      placeholder="Phone">
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Building</button>
+</form>

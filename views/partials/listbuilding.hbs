@@ -1,0 +1,13 @@
+{{#each campus.building}}
+    <section class ="ui segment">
+    <h2 class="ui header">
+      {{id}}
+    </h2>
+    <a href="/building/{{id}}">
+    <i class='icon open folder'></i>
+    </a>
+    <a href="/campus/{{../campus.id}}/deleteBuilding/{{id}}">
+    <i class="icon trash deleteBuilding"></i>
+    </a>
+    </section>
+{{/each}}
