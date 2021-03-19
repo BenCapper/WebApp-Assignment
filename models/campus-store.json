@@ -1,0 +1,143 @@
+{
+  "campusCollection": [
+    {
+      "id": "Main Campus",
+      "building": [
+        {
+          "id": "Main Building",
+          "roomamount": "3",
+          "phone": "00000000",
+          "room": [
+            {
+              "id": "1",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "2",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "3",
+              "capacity": "30",
+              "equipment": "Projector"
+            }
+          ]
+        },
+        {
+          "id": "Business Building",
+          "roomamount": "3",
+          "phone": "11111111",
+          "room": [
+            {
+              "id": "1",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "2",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "3",
+              "capacity": "30",
+              "equipment": "Projector"
+            }
+          ]
+        },
+        {
+          "id": "IT Building",
+          "roomamount": 0,
+          "phone": "08438247932",
+          "room": []
+        },
+        {
+          "id": "dsf",
+          "roomamount": 0,
+          "phone": "dsf",
+          "room": []
+        }
+      ]
+    },
+    {
+      "id": "Other WIT Buildings",
+      "building": [
+        {
+          "id": "Law Building",
+          "roomamount": "3",
+          "phone": "444444444",
+          "room": [
+            {
+              "id": "1",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "2",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "3",
+              "capacity": "30",
+              "equipment": "Projector"
+            }
+          ]
+        },
+        {
+          "id": "Arts Building",
+          "roomamount": "3",
+          "phone": "55555555",
+          "room": [
+            {
+              "id": "1",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "2",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "3",
+              "capacity": "30",
+              "equipment": "Projector"
+            }
+          ]
+        },
+        {
+          "id": "WIT Arena",
+          "roomamount": "3",
+          "phone": "66666666",
+          "room": [
+            {
+              "id": "1",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "2",
+              "capacity": "30",
+              "equipment": "Projector"
+            },
+            {
+              "id": "3",
+              "capacity": "30",
+              "equipment": "Projector"
+            }
+          ]
+        },
+        {
+          "roomamount": 0,
+          "room": []
+        }
+      ]
+    },
+    {
+      "id": "hfg"
+    }
+  ]
+}
