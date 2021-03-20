@@ -1,31 +1,13 @@
 {"developerCollection":
   [
     {
-      "name":"Stevie",
-      "fullname":"Stevie Feliciano",
-      "image":"https://cdn.glitch.com/1b90c183-19a4-4452-8843-70baf29a2f6c%2Fstevie.png?v=1613570272982",
-      "joined":2016,
-      "job":"Web Developer",
-      "city":"Boston",
-      "mates":35
-    },
-    {
-      "name":"Helen",
-      "fullname":"Helen Hess",
-      "image":"https://cdn.glitch.com/1b90c183-19a4-4452-8843-70baf29a2f6c%2Fhelen.png?v=1613570263760",
-      "joined":2013,
-      "job":"Art Director",
-      "city":"New York",
-      "mates":22
-    },
-    {
-      "name":"Elliot",
-      "fullname":"Elliot Fu",
-      "image":"https://cdn.glitch.com/1b90c183-19a4-4452-8843-70baf29a2f6c%2Felliot.png?v=1613570250361",
-      "joined":2015,
-      "job":"Research Assistant",
-      "city":"New York",
-      "mates":26
+      "name":"Ben Capper",
+      "course": "Software Systems Development",
+      "year": "Year 2",
+      "phone": "0851121720",
+      "email": "BenCapper19@gmail.com",
+      "github": "BenCapper"
+      
     }
   ]
 }

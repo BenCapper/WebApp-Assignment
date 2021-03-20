@@ -1,20 +1,25 @@
 <div class="ui card" id ="{{name}}">
-  <div class="image">
-    <img src="{{image}}">
+  <div id="map">
   </div>
   <div class="content">
-    <a class="header">{{fullname}}</a>
-    <div class="meta">
-      <span class="date">Joined in {{joined}}</span>
-    </div>
-    <div class="description">
-      {{name}} is {{job}} in {{city}}
+    <a class="header" id="dodge"><b>{{name}}</b></a>
+    <div class="description" id="orange">
+     <b> {{course}}<br>
+       {{year}}</b>
     </div>
   </div>
-  <div class="extra content">
-    <a>
-      <i class="user icon"></i>
-      {{mates}} Friends
-    </a>
+  <div class="extra content" >
+    <a id="orange">
+      <i class="ui phone icon" id="dodge"></i>
+      <b>{{phone}}</b>
+    </a><br>
+    <a id="orange">
+      <i class="ui github icon" id="dodge"></i>
+      <b>{{github}}</b>
+    </a><br>
+    <a id="orange">
+      <i class="ui envelope outline icon" id="dodge"></i>
+      <b>{{email}}</b>
+    </a><br>
   </div>
 </div>

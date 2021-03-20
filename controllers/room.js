@@ -56,6 +56,7 @@ const room = {
     const classId = request.params.classid;
     logger.debug("updating room " + roomId);
     const updatedClass = {
+      id: uuid(),
       lecturer: request.body.lecturer,
       time: request.body.time,
       day: request.body.day,
