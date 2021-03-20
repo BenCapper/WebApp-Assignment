@@ -14,7 +14,7 @@ const start = {
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Welcome to WIT Reservations!',
+      title: 'WIT Reservations',
     };
 
     // render the start view and pass through the data
