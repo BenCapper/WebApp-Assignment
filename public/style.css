@@ -8,10 +8,44 @@ h1 {
   color: #373fff;
 }
 
-#welcomeuser {
-  display: none;
+.ui.header {
+  color: dodgerblue;
 }
 
-#readMore {
-  display: none;
+.ui.blue.button {
+  background-color: dodgerblue;
+}
+
+th {
+  color: orange!important;
+}
+
+label{
+  color: dodgerblue!important;
+}
+
+.active.section{
+  color: orange;
+}
+
+
+
+#dodge {
+  color: dodgerblue;
+}
+
+#orange {
+  color: orange!important;
+}
+
+p {
+  color: orange;
+}
+
+i {
+  color: lightgray;
+}
+
+#iconwhite {
+  color: white;
 }

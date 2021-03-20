@@ -3,7 +3,11 @@
     <h2 class="ui header">
       {{id}}       
     </h2>
-    <a href="/building/{{../campus.id}}/viewroom/{{id}}">
+      <p>
+        <b>Number of Rooms: {{roomamount}}<br>
+        Phone Number: {{phone}}</b>
+      </p>
+    <a href="/building/{{../campus.id}}/build/{{id}}">
     <i class='icon open folder'></i>
     </a>
     <a href="/campus/{{../campus.id}}/deleteBuilding/{{id}}">

@@ -21,34 +21,37 @@ const building = {
   deleteRoom(request, response) {
     const campusId = request.params.id;
     const buildingId = request.params.buildingid;
-    logger.debug(`Deleting building ${buildingId} from Campus ${campusId}`);
-    campusStore.removeBuilding(campusId, buildingId);
-    response.redirect('/campus/' + campusId);
+    const roomId = request.params.roomid;
+    logger.debug(`Deleting room ${roomId} from building ${buildingId}`);
+    campusStore.removeRoom(campusId, buildingId, roomId);
+    response.redirect('/building/' + campusId + '/build/' + buildingId);
   },
   
   addRoom(request, response) {
     const campusId = request.params.id;
     const buildingId = request.params.buildingid
-    const building = campusStore.getBuilding(campusId,buildingId);
     const newRoom = {
       id: request.body.id,
-      capacity: 20,
-      equipment: "none",
+      capacity: request.body.capacity,
+      equipment: request.body.equipment,
+      class: [],
     };
     campusStore.addRoom(campusId, buildingId, newRoom);
-    response.redirect('/building/' + campusId + '/viewroom/' + buildingId);
+    response.redirect('/building/' + campusId + '/build/' + buildingId);
   },
 
   updateRoom(request, response) {
     const campusId = request.params.id;
     const buildingId = request.params.buildingid;
+    const roomId = request.params.roomId;
     logger.debug("updating building " + buildingId);
-    const updatedBuilding = {
+    const updatedRoom = {
       id: request.body.id,
-      phone: request.body.phone,
+      capacity: request.body.capacity,
+      equipment: request.body.equipment,
     };
-    campusStore.editBuilding(campusId, buildingId, updatedBuilding);
-    response.redirect('/campus/' + campusId);
+    campusStore.editRoom(campusId, buildingId, roomId, updatedRoom);
+    response.redirect('/building/' + campusId + '/build/' + buildingId);
   },
   
 };
