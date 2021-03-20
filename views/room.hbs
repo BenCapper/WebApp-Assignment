@@ -6,14 +6,13 @@
   <i class="right angle icon divider"></i>
     <a class="section" href="/campus/{{campus.id}}">Building</a>
     <i class="right angle icon divider"></i>
-  <div class="active section">Rooms</div>
+      <a class=" section" href="/building/{{campus.id}}/build/{{building.id}}">Rooms</a>
     <i class="right angle icon divider"></i>
-        <div class="section">Classes</div>
-    
+      <div class="active section">Classes</div>
 </div>
   <h2 class="ui header">
-    {{building.id}}
+    {{room.id}}
   </h2>
-  {{> listroom}}
-  {{> addroom}}
+  {{> listclass}}
+  {{> addclass}}
 </section>

@@ -1,12 +1,16 @@
-{{#each campus.building.room}}
+{{#each building.room}}
     <section class ="ui segment">
     <h2 class="ui header">
       {{id}}
     </h2>
-    <a href="/room/{{id}}">
+      <p>
+        <b>Capacity: {{capacity}}<br>
+          Equipment: {{equipment}}</b>
+      </p>
+    <a href="/room/{{../campus.id}}/build/{{../building.id}}/getRoom/{{id}}">
     <i class='icon open folder'></i>
     </a>
-    <a href="/building/{{../building.id}}/deleteRoom/{{id}}">
+    <a href="/building/{{../campus.id}}/build/{{../building.id}}/deleteRoom/{{id}}">
     <i class="icon trash deleteRoom"></i>
     </a>
     </section>

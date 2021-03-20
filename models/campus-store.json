@@ -4,60 +4,77 @@
       "id": "Main Campus",
       "building": [
         {
-          "id": "Main Building",
-          "roomamount": "3",
-          "phone": "00000000",
-          "room": [
-            {
-              "id": "1",
-              "capacity": "30",
-              "equipment": "Projector"
-            },
-            {
-              "id": "2",
-              "capacity": "30",
-              "equipment": "Projector"
-            },
-            {
-              "id": "3",
-              "capacity": "30",
-              "equipment": "Projector"
-            }
-          ]
-        },
-        {
-          "id": "Business Building",
-          "roomamount": "3",
-          "phone": "11111111",
-          "room": [
-            {
-              "id": "1",
-              "capacity": "30",
-              "equipment": "Projector"
-            },
-            {
-              "id": "2",
-              "capacity": "30",
-              "equipment": "Projector"
-            },
-            {
-              "id": "3",
-              "capacity": "30",
-              "equipment": "Projector"
-            }
-          ]
-        },
-        {
           "id": "IT Building",
-          "roomamount": 0,
+          "roomamount": 2,
           "phone": "08438247932",
-          "room": []
+          "room": [
+            {
+              "id": "IT106",
+              "capacity": 20,
+              "equipment": "none",
+              "class": [
+                {
+                  "id": "b644f916-e5d9-4f4e-9d42-0e57620422ee",
+                  "lecturer": "Lecturer Name",
+                  "time": "Class Time",
+                  "day": "Class Day",
+                  "studentgroup": "Student Group",
+                  "module": "Module"
+                }
+              ]
+            },
+            {
+              "id": "IT107",
+              "capacity": "28",
+              "equipment": "IT",
+              "class": [
+                {
+                  "id": "IT-111",
+                  "lecturer": 20,
+                  "time": "none",
+                  "day": "none",
+                  "studentgroup": "none",
+                  "module": "none"
+                },
+                {
+                  "id": "IT-112",
+                  "lecturer": "Enter Lecturer Name",
+                  "time": "Enter Class Time",
+                  "day": "Enter Class Day",
+                  "studentgroup": "Enter Student Group",
+                  "module": "Enter Module"
+                }
+              ]
+            }
+          ]
         },
         {
-          "id": "dsf",
-          "roomamount": 0,
-          "phone": "dsf",
-          "room": []
+          "id": "Tourism and Leisure",
+          "roomamount": 2,
+          "phone": "0851121720",
+          "room": [
+            {
+              "id": "TL103",
+              "capacity": 20,
+              "equipment": "none",
+              "class": [
+                {
+                  "id": "7",
+                  "lecturer": "20",
+                  "time": "none",
+                  "day": "none",
+                  "studentgroup": "none",
+                  "module": "none"
+                }
+              ]
+            },
+            {
+              "id": "TL104",
+              "capacity": "28",
+              "equipment": "Projector",
+              "class": []
+            }
+          ]
         }
       ]
     },
@@ -66,78 +83,197 @@
       "building": [
         {
           "id": "Law Building",
-          "roomamount": "3",
+          "roomamount": 6,
           "phone": "444444444",
           "room": [
             {
               "id": "1",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "13",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             },
             {
               "id": "2",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "14",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             },
             {
               "id": "3",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "15",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
+            },
+            {
+              "id": "4",
+              "capacity": 20,
+              "equipment": "none",
+              "class": [
+                {
+                  "id": "16",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
+            },
+            {
+              "id": "5",
+              "capacity": 20,
+              "equipment": "none",
+              "class": [
+                {
+                  "id": "17",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
+            },
+            {
+              "id": "6",
+              "capacity": "28",
+              "equipment": "IT",
+              "class": []
             }
           ]
         },
         {
           "id": "Arts Building",
-          "roomamount": "3",
+          "roomamount": 3,
           "phone": "55555555",
           "room": [
             {
               "id": "1",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "18",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             },
             {
               "id": "2",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "19",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             },
             {
               "id": "3",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "20",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             }
           ]
         },
         {
           "id": "WIT Arena",
-          "roomamount": "3",
+          "roomamount": 3,
           "phone": "66666666",
           "room": [
             {
               "id": "1",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "21",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             },
             {
               "id": "2",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "22",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             },
             {
               "id": "3",
               "capacity": "30",
-              "equipment": "Projector"
+              "equipment": "Projector",
+              "class": [
+                {
+                  "id": "23",
+                  "lecturer": "Mary Lyng",
+                  "time": "9.15",
+                  "day": "Monday",
+                  "studentgroup": "SSD2",
+                  "module": "Web App Development 1"
+                }
+              ]
             }
           ]
-        },
-        {
-          "roomamount": 0,
-          "room": []
         }
       ]
-    },
-    {
-      "id": "hfg"
     }
   ]
 }

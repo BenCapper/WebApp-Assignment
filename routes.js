@@ -10,16 +10,35 @@ const dashboard = require('./controllers/dashboard.js');
 const about = require('./controllers/about.js');
 const campus = require('./controllers/campus.js');
 const building = require('./controllers/building.js');
+const room = require('./controllers/room.js');
 
 // connect routes to controllers
 router.get('/', start.index);
-router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
-router.get('/campus/:id', campus.index);
-router.get('/building/:id', building.index);
-router.post('/campus/:id/addBuilding', campus.addBuilding);
-router.post('/building/:id/addRoom', building.addRoom);
+
+router.get('/dashboard', dashboard.index);
+router.get('/dashboard/deleteCampus/:id', dashboard.deleteCampus);
 router.post('/dashboard/addCampus', dashboard.addCampus);
+
+router.get('/campus/:id', campus.index);
+router.get('/campus/:id/deleteBuilding/:buildingid', campus.deleteBuilding);
+router.post('/campus/:id/addBuilding', campus.addBuilding);
+
+router.get('/building/:id/build/:buildingid', building.index);
+router.get('/building/:id/build/:buildingid/deleteRoom/:roomid', building.deleteRoom);
+router.post('/building/:id/build/:buildingid/addRoom', building.addRoom);
+
+router.get('/room/:id/build/:buildingid/getRoom/:roomid', room.index);
+router.get('/room/:id/build/:buildingid/getRoom/:roomid/getClass/:classid', room.index);
+router.get('/room/:id/build/:buildingid/getRoom/:roomid/addClass', room.index);
+router.get('/room/:id/build/:buildingid/getRoom/:roomid/getClass/:classid/updateClass/:classid', room.updateClass);
+router.get('/room/:id/build/:buildingid/getRoom/:roomid/deleteClass/:classid', room.deleteClass);
+router.post('/room/:id/build/:buildingid/getRoom/:roomid/addClass', room.addClass);
+router.post('/room/:id/build/:buildingid/getRoom/:roomid/getClass/:classid/updateClass/:classid', room.updateClass);
+
+
+
+
 
 
 // export router module

@@ -1,9 +1,18 @@
-<form class="ui stacked segment form" action="/building/{{campus.building.id}}/addroom" method="POST">
-
-    <div class="field">
-    <label for="id">ID</label>
-    <input placeholder="ID" type="text" name="id" autofocus required>
+<form class="ui stacked segment form" action="/building/{{campus.id}}/build/{{building.id}}/addRoom" method="POST">
+  <div class="three fields">
+    
+  <div class="field">
+    <label for="id">Room Number</label>
+    <input placeholder="Room Number" type="text" name="id" autofocus required>
     </div>
-
+    <div class="field">
+    <label for="capacity">Capacity</label>
+    <input placeholder="ID" type="text" name="capacity" autofocus required>
+    </div>
+    <div class="field">
+    <label for="id">Equipment</label>
+    <input placeholder="Equipment" type="text" name="equipment" autofocus required>
+    </div>
+  </div>
   <button class="ui blue submit button">Add Room</button>
 </form>
