@@ -28,6 +28,12 @@ label{
   color: orange;
 }
 
+.ui.menu {
+  color: dodgerblue;
+    background-image: url("https://cdn.glitch.com/327c9440-a1c3-42c6-95ae-92a594ef75ff%2FWIT%20Logo68.png?v=1616335450385")!important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 #dodge {
