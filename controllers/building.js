@@ -31,7 +31,8 @@ const building = {
     const campusId = request.params.id;
     const buildingId = request.params.buildingid
     const newRoom = {
-      id: request.body.id,
+      id: uuid(),
+      name: request.body.name,
       capacity: request.body.capacity,
       equipment: request.body.equipment,
       class: [],
@@ -46,7 +47,8 @@ const building = {
     const roomId = request.params.roomId;
     logger.debug("updating building " + buildingId);
     const updatedRoom = {
-      id: request.body.id,
+      id: uuid(),
+      name: request.body.name,
       capacity: request.body.capacity,
       equipment: request.body.equipment,
     };

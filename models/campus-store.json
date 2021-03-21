@@ -1,15 +1,18 @@
 {
   "campusCollection": [
     {
-      "id": "Main Campus",
+      "id": "1",
+      "name": "Main Campus",
       "building": [
         {
-          "id": "IT Building",
+          "id": "2",
+          "name": "IT Building",
           "roomamount": 2,
           "phone": "08438247932",
           "room": [
             {
-              "id": "IT107",
+              "id": "10",
+              "name": "IT107",
               "capacity": "28",
               "equipment": "IT",
               "class": [
@@ -32,7 +35,8 @@
               ]
             },
             {
-              "id": "IT108",
+              "id": "11",
+              "name": "IT108",
               "capacity": "32",
               "equipment": "IT (Science)",
               "class": [
@@ -65,12 +69,14 @@
           ]
         },
         {
-          "id": "Tourism and Leisure",
+          "id": "3",
+          "name": "Tourism and Leisure",
           "roomamount": 3,
           "phone": "0851121720",
           "room": [
             {
-              "id": "TL 103",
+              "id": "12",
+              "name": "TL 103",
               "capacity": "87",
               "equipment": "Large Projector",
               "class": [
@@ -101,7 +107,8 @@
               ]
             },
             {
-              "id": "TL104",
+              "id": "15",
+              "name": "TL104",
               "capacity": "39",
               "equipment": "Projector",
               "class": [
@@ -124,7 +131,8 @@
               ]
             },
             {
-              "id": "TL105",
+              "id": "20",
+              "name": "TL105",
               "capacity": "45",
               "equipment": "Speakers",
               "class": [
@@ -143,7 +151,8 @@
       ]
     },
     {
-      "id": "W.I.T Buildings",
+      "id": "2",
+      "name": "W.I.T Buildings",
       "building": [
         {
           "id": "Granary",
@@ -159,7 +168,8 @@
           ]
         },
         {
-          "id": "College Street",
+          "id": "6",
+          "name": "College Street",
           "roomamount": 2,
           "phone": "08243657463",
           "room": [
@@ -167,7 +177,16 @@
               "id": "CS203",
               "capacity": "20",
               "equipment": "Art",
-              "class": []
+              "class": [
+                {
+                  "id": "ac4f0478-02d4-43b9-9ad2-32970ef78b58",
+                  "lecturer": "Lecturer Name",
+                  "time": "Class Time",
+                  "day": "Class Day",
+                  "studentgroup": "Student Group",
+                  "module": "Module"
+                }
+              ]
             },
             {
               "id": "CS204",

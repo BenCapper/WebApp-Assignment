@@ -17,7 +17,7 @@ const dashboard = {
 
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'Playlist App Dashboard',
+      title: 'W.I.T Reservations Dashboard',
       campus: campusStore.getAllCampus(),
     };
 
@@ -35,7 +35,8 @@ const dashboard = {
   
   addCampus(request, response) {
     const newCampus = {
-      id: request.body.id,
+      id: uuid(),
+      name: request.body.name
     };
     campusStore.addCampus(newCampus);
     response.redirect('/dashboard');

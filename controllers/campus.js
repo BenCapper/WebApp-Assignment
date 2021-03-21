@@ -41,7 +41,8 @@ const campus = {
   addBuilding(request, response) {
     const campusId = request.params.id;
     const newBuilding = {
-      id: request.body.id,
+      id: uuid(),
+      name: request.body.name,
       roomamount: 0,
       phone: request.body.phone,
       room: [],
@@ -56,7 +57,8 @@ const campus = {
     const rooms = campusStore.getRoomAmount(campusId,buildingId)
     logger.debug("updating building " + buildingId);
     const updatedBuilding = {
-      id: request.body.id,
+      id: uuid(),
+      name: request.body.name,
       roomamount: rooms,
       phone: request.body.phone,
     };
