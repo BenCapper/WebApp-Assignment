@@ -1,5 +1,9 @@
 # Reservation assignment
 
+-Added images and statistics
+
+-Implemented sessions / login / signup
+
 - css styling
 - added array of classes to room array
 - list / add / delete / update classes

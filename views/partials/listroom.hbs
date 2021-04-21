@@ -1,8 +1,13 @@
-{{#each building.room}}
-    <section class ="ui segment">
-    <h2 class="ui header">
-      {{name}}
-    </h2>
+<div class="ui centered cards">
+  {{#each building.room}}
+    <div class="ui card">
+      <div class="image">
+        <img src="{{picture}}">
+      </div>
+      <div class="content">
+        <a class="header">{{name}}</a>
+      </div>
+      <div class="extra content">
       <p>
         <b>Capacity: {{capacity}}<br>
           Equipment: {{equipment}}</b>
@@ -13,5 +18,7 @@
     <a href="/building/{{../campus.id}}/build/{{../building.id}}/deleteRoom/{{id}}">
     <i class="icon trash deleteRoom"></i>
     </a>
-    </section>
-{{/each}}
+      </div>
+    </div>
+  {{/each}}
+</div>

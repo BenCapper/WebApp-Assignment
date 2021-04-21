@@ -3,6 +3,7 @@
 // import all required modules
 const logger = require('../utils/logger');
 const developerStore = require('../models/developer-store.js');
+const accounts = require ('./accounts.js');
 
 // create about object
 const about = {
@@ -12,11 +13,13 @@ const about = {
 
     // display confirmation message in log
     logger.info('about rendering');
-
+    const loggedInUser = accounts.getCurrentUser(request);
     // create view data object (contains data to be sent to the view e.g. page title)
     const viewData = {
-      title: 'About Playlist App',
+      title: 'About WIT Class Manager',
       developers: developerStore.getAllDevelopers(),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
     };
 
     // render the about view and pass through the data

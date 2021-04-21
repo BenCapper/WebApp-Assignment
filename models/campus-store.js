@@ -2,21 +2,65 @@
 
 const _ = require('lodash');
 const JsonStore = require('./json-store');
+const cloudinary = require('cloudinary');
 const logger = require('../utils/logger');
+
+try {
+  const env = require('../.data/.env.json');
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info('You must provide a Cloudinary credentials file - see README.md');
+  process.exit(1);
+}
+
+
 const campusStore = {
 
   store: new JsonStore('./models/campus-store.json', { campusCollection: [] }),
   collection: 'campusCollection',
+  
+  getUserCollection(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
 
   getAllCampus() {
     return this.store.findAll(this.collection);
+  },
+  
+  getAllBuilding() {
+    const campuses = this.store.findAll(this.collection);
+    const buildings = [];
+    
+    campuses.forEach(campus => buildings.push(campus.building));
+    
+    logger.info(buildings);
+    return buildings;
+  },
+  
+  getAllRoom() {
+    const campuses = this.store.findAll(this.collection);
+    const buildings = [];
+    const rooms = [];
+    campuses.forEach(campus => buildings.push(campus.building));
+    buildings.forEach(building => rooms.push(building.room));
+    return rooms;
   },
 
   getCampus(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
   
-  addCampus(campus) {
+  addCampus(campus, response) {
+    campus.picture.mv('tempimage', err => {
+        if (!err) {
+          cloudinary.uploader.upload('tempimage', result => {
+            console.log(result);
+            campus.picture = result.url;
+            response();
+          });
+        }
+      });
     this.store.add(this.collection, campus);
   },
 
@@ -36,8 +80,22 @@ const campusStore = {
     return foundBuild;
   },
   
-  addBuilding(id, building) {
+  /*addBuilding(id, building) {
     const campus = this.getCampus(id);
+    campus.building.push(building);
+  },*/
+  
+    addBuilding(id, building, response) {
+    const campus = this.getCampus(id);
+    building.picture.mv('tempimage', err => {
+        if (!err) {
+          cloudinary.uploader.upload('tempimage', result => {
+            console.log(result);
+            building.picture = result.url;
+            response();
+          });
+        }
+      });
     campus.building.push(building);
   },
 
@@ -84,8 +142,22 @@ const campusStore = {
     room[index].equipment = updatedRoom.equipment;
   },
   
-  addRoom(id, buildingId, room) {
+  /*addRoom(id, buildingId, room) {
     const building = this.getBuilding(id, buildingId);
+    building.room.push(room);
+  },*/
+  
+  addRoom(id, buildingId, room, response) {
+    const building = this.getBuilding(id, buildingId);
+    room.picture.mv('tempimage', err => {
+        if (!err) {
+          cloudinary.uploader.upload('tempimage', result => {
+            console.log(result);
+            room.picture = result.url;
+            response();
+          });
+        }
+      });
     building.room.push(room);
   },
   
@@ -119,6 +191,19 @@ const campusStore = {
     const room = this.getRoom(id, buildingId, roomId);
     room.class.push(scheduledClass);
   },
+  
+  checkDateTime(id, buildId, roomId, date, time){
+    const room = this.getRoom(id, buildId, roomId);
+    const classes = room.class;
+    for (let schedClass of classes){
+      if(schedClass.time === time && schedClass.day === date){
+        return false;
+      }
+      else{
+        return true
+      }
+    }
+  }
 };
 
 module.exports = campusStore;
