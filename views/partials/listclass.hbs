@@ -3,10 +3,10 @@
     <tr>
       <th class="two wide">Id</th>
       <th class="three wide">Lecturer</th>
+      <th class="two wide">Student Group</th>
+      <th class="three wide">Module</th>
       <th class="two wide">Time</th>
-      <th class="two wide">Day</th>
-      <th class="three wide">Student Group</th>
-      <th class="four wide">Module</th>
+      <th class="four wide">Date</th>
       <th class="one wide"> </th>
       <th class="one wide"> </th>
     </tr>
@@ -14,36 +14,37 @@
 <tbody>
     {{#each room.class}}
     <form class = "ui stacked segment form" action="/room/{{../campus.id}}/build/{{../building.id}}/getRoom/{{../room.id}}/getClass/{{id}}/updateClass/{{id}}" method="POST">
-    <tr class="fields">
+    <tr class="eight fields">
       <td class="field">
         <span class="ui input">
          <input type="text" name="id" autofocus required title = "Please include a valid Id" placeholder="Id" value = "{{id}}">
         </span>
       </td>
-      <td class="field">
+      <td class="ui field">
         <span class="ui input">
           <input type="text" name="lecturer" required title = "Please include a valid Lecturer"
       placeholder="Lecturer" value = "{{lecturer}}">
         </span>
       </td>
-      <td class="field">
-        <span class="ui input">
-          <input type="text" name="time" autofocus required title = "Please include a valid Time" placeholder="Time" value = "{{time}}">         
-        </span>
-      </td>
-      <td class="field">
-        <span class="ui input">
-          <input type="text" name="day" required title = "Please enter a valid Day" placeholder="Day" value = "{{day}}">
-        </span>
-      </td>
-      <td class="field">
+
+      <td class="ui field">
         <span class="ui input">
           <input type="text" name="studentgroup" required title = "Please enter a valid Student Group" placeholder="Student Group" value = "{{studentgroup}}">
         </span>
       </td>
-      <td class="field">
+      <td class="ui field">
         <span class="ui input">
           <input type="text" name="module" required title = "Please enter a valid Module" placeholder="Module" value = "{{module}}">
+        </span>
+      </td>
+            <td class="ui field">
+        <span class="ui input">
+          <input type="text" name="time" autofocus required title = "Please include a valid Time" placeholder="Time" value = "{{time}}">         
+        </span>
+      </td>
+      <td class="ui field">
+        <span class="ui input">
+          <input type="date" name="day" required title = "Please enter a valid Day" placeholder="Day" value = "{{day}}">
         </span>
       </td>
       <td class="center aligned">
@@ -59,3 +60,6 @@
     {{/each}}
   </tbody>
 </table>
+<div id="error">
+  
+</div>

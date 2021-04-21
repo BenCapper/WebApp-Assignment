@@ -3,18 +3,145 @@
       <section class="ui two column grid segment">
         <div class="ui column">
           <h2 id="dodge">{{title}}</h2>
-          
-            This app will allow users to navigate through the different campuses, buildings, and rooms
-            in which W.I.T is situated. 
-           <br><br> The user may also add a new campus, building or room to the existing list.<br><br>
-            A list of classes scheduled in each room are also available, with the option of adding a new class,
-            updating an existing one or deleting a scheduled class.
+            Welcome {{fullname}}!<br><br>
+            This app will allow users to add college campus', buildings and rooms relevent to them, to their list.
+            Classes can then be scheduled, updated, and deleted by selecting a room.
+           <br><br> The user may also save a note for each class.<br><br>
+            A list of every scheduled class the user has created can be found via the "My Classes" tab.
             
           <br><br>
            <a class="ui blue button" href="/dashboard">
               Get Started <i class="arrow circle right icon" id="iconwhite"></i>
             </a> 
+          
+          <br><br>
+          <h2 id="dodge">
+            Your Statistics
+          </h2>
+          <div class="ui tiny statistics">
+            <div class="statistic">
+            <div class="value">
+              {{usercampus}}
+            </div>
+            <div class="label">
+              Campuses
+            </div>
+            </div>
+          <div class="statistic">
+          <div class="value">
+            {{userbuilding}}
+          </div>
+          <div class="label">
+            Buildings
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            22
+          </div>
+          <div class="label">
+            Rooms
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            22
+          </div>
+          <div class="label">
+            Classes
+          </div>
+          </div>
         </div>
+          
+
+          
+          
+        <h2 id="dodge">
+          App Statistics
+          </h2>
+          <div class="ui tiny statistics">
+            <div class="statistic">
+            <div class="value">
+              22
+            </div>
+            <div class="label">
+              Campuses
+            </div>
+            </div>
+          <div class="statistic">
+          <div class="value">
+            31,200
+          </div>
+          <div class="label">
+            Buildings
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            22
+          </div>
+          <div class="label">
+            Rooms
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            22
+          </div>
+          <div class="label">
+            Classes
+          </div>
+          </div>
+        </div> 
+          
+        <h2 id="dodge">
+          Total App Statistics
+        </h2>
+          <div class="ui tiny statistics">
+          <div class="statistic">
+          <div class="value">
+            {{totalcampus}}
+          </div>
+          <div class="label">
+            Campuses
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            {{totalbuilding}}
+          </div>
+          <div class="label">
+            Buildings
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            {{totalroom}}
+          </div>
+          <div class="label">
+            Rooms
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            22
+          </div>
+          <div class="label">
+            Classes
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            {{users}}
+          </div>
+          <div class="label">
+            Users
+          </div>
+          </div>
+        </div>
+          
+          
+      </div>
         <div class="ui column">
 
               <img

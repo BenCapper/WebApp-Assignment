@@ -1,9 +1,12 @@
-<form class="ui stacked segment form" action="/dashboard/addcampus" method="POST">
+<form class="ui stacked segment form" action="/dashboard/addcampus" method="POST" enctype="multipart/form-data">
 
     <div class="field">
     <label for="name">Campus Name</label>
     <input placeholder="Campus Name" type="text" name="name" autofocus required>
     </div>
-
+    <div class="field">
+      <label>Image</label>
+      <input placeholder="Image" type="file" name="picture" required>
+    </div>
   <button class="ui blue submit button">Add Campus</button>
 </form>

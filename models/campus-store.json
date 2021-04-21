@@ -1,200 +1,28 @@
 {
   "campusCollection": [
     {
-      "id": "1",
-      "name": "Main Campus",
+      "id": "7ca4ce36-ef5a-4c12-945f-8b85aaab3565",
+      "userid": "2fc7f7ce-0b8a-47d7-ba93-f259dfcf4907",
+      "name": "1",
+      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619000458/hvtr8ivbhaxpi2ysk4iv.jpg",
       "building": [
         {
-          "id": "2",
-          "name": "IT Building",
-          "roomamount": 2,
-          "phone": "08438247932",
-          "room": [
-            {
-              "id": "10",
-              "name": "IT107",
-              "capacity": "28",
-              "equipment": "IT",
-              "class": [
-                {
-                  "id": "f5bba52c-5566-4446-ab56-fb48c2a4d612",
-                  "lecturer": "Mary Lyng",
-                  "time": "2:15PM",
-                  "day": "Monday",
-                  "studentgroup": "SSDW1",
-                  "module": "Web App Development"
-                },
-                {
-                  "id": "edf31103-0796-4d25-b283-2f1626914854",
-                  "lecturer": "Mary Fitzgerald Name",
-                  "time": "1:15PM",
-                  "day": "Tuesday",
-                  "studentgroup": "SSDW2",
-                  "module": "Systems Analysis"
-                }
-              ]
-            },
-            {
-              "id": "11",
-              "name": "IT108",
-              "capacity": "32",
-              "equipment": "IT (Science)",
-              "class": [
-                {
-                  "id": "61e43daa-9f9b-4241-ada9-2c3a166fe42d",
-                  "lecturer": "David Power",
-                  "time": "9.15",
-                  "day": "Monday",
-                  "studentgroup": "ITW1",
-                  "module": "Computer Networks"
-                },
-                {
-                  "id": "38e84fd9-8ce1-437b-be77-fc7ca434b53a",
-                  "lecturer": "Amanda Freeman-Gater",
-                  "time": "10:15AM",
-                  "day": "Monday",
-                  "studentgroup": "SSDW2",
-                  "module": "Computer Systems"
-                },
-                {
-                  "id": "e830a0d1-5cab-419c-ad81-0ce7ecbfaf88",
-                  "lecturer": "Joe Daly",
-                  "time": "11:15AM",
-                  "day": "Tuesday",
-                  "studentgroup": "ITW2",
-                  "module": "Data Structures and Algorithms"
-                }
-              ]
-            }
-          ]
+          "id": "53cfc1ec-3b91-4f1c-a362-a83a59dc7e54",
+          "userid": "2fc7f7ce-0b8a-47d7-ba93-f259dfcf4907",
+          "name": "1",
+          "roomamount": 0,
+          "phone": "1",
+          "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619000784/xm7krdmwsdzehunjannr.jpg",
+          "room": []
         },
         {
-          "id": "3",
-          "name": "Tourism and Leisure",
-          "roomamount": 3,
-          "phone": "0851121720",
-          "room": [
-            {
-              "id": "12",
-              "name": "TL 103",
-              "capacity": "87",
-              "equipment": "Large Projector",
-              "class": [
-                {
-                  "id": "a6715ecb-302b-4768-b2a8-7e032e7e18ed",
-                  "lecturer": "Anne Vereker",
-                  "time": "9:15AM",
-                  "day": "Wednesday",
-                  "studentgroup": "SSDW1",
-                  "module": "Mathematics Fundamentals"
-                },
-                {
-                  "id": "d41f7b13-2b26-470f-8cf3-a0150a293bad",
-                  "lecturer": "Anne Dunphy",
-                  "time": "4:15PM",
-                  "day": "Wednesday",
-                  "studentgroup": "ITW2",
-                  "module": "Database Systems"
-                },
-                {
-                  "id": "c15d8ad1-521f-47cf-b47b-f6bb2c3d023e",
-                  "lecturer": "Richie Lyng",
-                  "time": "12:15PM",
-                  "day": "Thursday",
-                  "studentgroup": "SSDW",
-                  "module": "Business Processes"
-                }
-              ]
-            },
-            {
-              "id": "15",
-              "name": "TL104",
-              "capacity": "39",
-              "equipment": "Projector",
-              "class": [
-                {
-                  "id": "c755aab0-c377-4cff-9f35-be36a839a751",
-                  "lecturer": "Amanda Freeman-Gater",
-                  "time": "10:15AM",
-                  "day": "Friday",
-                  "studentgroup": "ITW1",
-                  "module": "Computer Systems"
-                },
-                {
-                  "id": "b2361b92-97d0-4c25-8b8c-ddb61522413e",
-                  "lecturer": "Roseanne Birney",
-                  "time": "11:15AM",
-                  "day": "Friday",
-                  "studentgroup": "SSDW2",
-                  "module": "Web App Development"
-                }
-              ]
-            },
-            {
-              "id": "20",
-              "name": "TL105",
-              "capacity": "45",
-              "equipment": "Speakers",
-              "class": [
-                {
-                  "id": "8d357c76-a1cb-46b2-9608-c3a04f1a93d0",
-                  "lecturer": "Anne Dunphy",
-                  "time": "4:15PM",
-                  "day": "Tuesday",
-                  "studentgroup": "SSDW1",
-                  "module": "Database Fundamentals"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "W.I.T Buildings",
-      "building": [
-        {
-          "id": "Granary",
-          "roomamount": 1,
-          "phone": "08637462537",
-          "room": [
-            {
-              "id": "Gran102",
-              "capacity": "63",
-              "equipment": "Architecture",
-              "class": []
-            }
-          ]
-        },
-        {
-          "id": "6",
-          "name": "College Street",
-          "roomamount": 2,
-          "phone": "08243657463",
-          "room": [
-            {
-              "id": "CS203",
-              "capacity": "20",
-              "equipment": "Art",
-              "class": [
-                {
-                  "id": "ac4f0478-02d4-43b9-9ad2-32970ef78b58",
-                  "lecturer": "Lecturer Name",
-                  "time": "Class Time",
-                  "day": "Class Day",
-                  "studentgroup": "Student Group",
-                  "module": "Module"
-                }
-              ]
-            },
-            {
-              "id": "CS204",
-              "capacity": "15",
-              "equipment": "Kitchen",
-              "class": []
-            }
-          ]
+          "id": "6ff681cf-7d52-4c32-b9fd-0a4a4c317771",
+          "userid": "2fc7f7ce-0b8a-47d7-ba93-f259dfcf4907",
+          "name": "2",
+          "roomamount": 0,
+          "phone": "2",
+          "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619000906/jejk6wnzjv9kf4ubozmz.jpg",
+          "room": []
         }
       ]
     }

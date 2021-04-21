@@ -1,6 +1,5 @@
-<form class="ui stacked segment form" action="/building/{{campus.id}}/build/{{building.id}}/addRoom" method="POST">
-  <div class="three fields">
-    
+<form class="ui stacked segment form" action="/building/{{campus.id}}/build/{{building.id}}/addRoom" method="POST" enctype="multipart/form-data">
+  <div class="four fields">
   <div class="field">
     <label for="name">Room Number</label>
     <input placeholder="Room Number" type="text" name="name" autofocus required>
@@ -12,6 +11,10 @@
     <div class="field">
     <label for="equipment">Equipment</label>
     <input placeholder="Equipment" type="text" name="equipment" autofocus required>
+    </div>
+    <div class="field">
+      <label>Image</label>
+      <input placeholder="Image" type="file" name="picture" required>
     </div>
   </div>
   <button class="ui blue submit button">Add Room</button>

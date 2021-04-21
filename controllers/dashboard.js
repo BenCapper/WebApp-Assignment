@@ -4,27 +4,27 @@
 const logger = require('../utils/logger');
 const campusStore = require('../models/campus-store.js');
 const uuid = require('uuid');
+const accounts = require ('./accounts.js');
 
 // create dashboard object
 const dashboard = {
 
-  // index method - responsible for creating and rendering the view
-  index(request, response) {
-
-    // display confirmation message in log
+    index(request, response) {
     logger.info('dashboard rendering');
-    const campusStore = require('../models/campus-store');
-
-    // create view data object (contains data to be sent to the view e.g. page title)
+    const loggedInUser = accounts.getCurrentUser(request);
+    if (loggedInUser) {
     const viewData = {
-      title: 'W.I.T Reservations Dashboard',
-      campus: campusStore.getAllCampus(),
+      title: 'Dashboard',
+      campus: campusStore.getUserCollection(loggedInUser.id),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture,
     };
-
-    // render the dashboard view and pass through the data
-    logger.info('about to render', viewData.campus);
+    logger.info('about to render' + viewData.campus);
     response.render('dashboard', viewData);
+    }
+    else response.redirect('/');
   },
+
   
   deleteCampus(request, response) {
     const campusId = request.params.id;
@@ -34,13 +34,18 @@ const dashboard = {
   },
   
   addCampus(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newCampus = {
       id: uuid(),
-      name: request.body.name
+      userid: loggedInUser.id,
+      name: request.body.name,
+      picture: request.files.picture,
+      building: [],
     };
-    campusStore.addCampus(newCampus);
-    response.redirect('/dashboard');
-  },
+    campusStore.addCampus(newCampus, function() {
+      response.redirect('/dashboard');
+    });
+    },
 };
 
 // export the dashboard module
