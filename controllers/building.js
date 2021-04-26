@@ -9,10 +9,27 @@ const building = {
   index(request, response) {
     const campusId = request.params.id;
     const buildingId = request.params.buildingid;
+    const roomId = request.params.roomid;
+    const rooms = campusStore.getBuilding(campusId,buildingId);
     const loggedInUser = accounts.getCurrentUser(request);
-    logger.debug(`Reading building ${buildingId} from Campus ${campusId}`);
+    for(let classes of rooms.room){
+      let classcount = classes.class.length;
+      logger.info(classcount);
+      const newRoom = {
+      id: classes.id,
+      userid: loggedInUser.id,
+      name: classes.name,
+      capacity: classes.capacity,
+      equipment: classes.equipment,
+      picture: classes.picture,
+      classcount: classcount,
+      class: classes.class,
+      }
+      campusStore.editRoom(campusId, buildingId, classes.id, newRoom)
+    }
     const viewData = {
       title: 'Building',
+      room: campusStore.getRoom(campusId, buildingId, roomId),
       building: campusStore.getBuilding(campusId, buildingId),
       campus: campusStore.getCampus(campusId),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
@@ -42,6 +59,7 @@ const building = {
       capacity: request.body.capacity,
       equipment: request.body.equipment,
       picture: request.files.picture,
+      classcount: 0,
       class: [],
     };
     campusStore.addRoom(campusId, buildingId, newRoom, function() {

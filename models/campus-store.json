@@ -1,30 +1,108 @@
 {
   "campusCollection": [
     {
-      "id": "7ca4ce36-ef5a-4c12-945f-8b85aaab3565",
-      "userid": "2fc7f7ce-0b8a-47d7-ba93-f259dfcf4907",
-      "name": "1",
-      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619000458/hvtr8ivbhaxpi2ysk4iv.jpg",
+      "id": "768e1432-e999-4fa4-a899-ed83267df0aa",
+      "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+      "name": "Main Campus",
+      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619426696/rliimgwelntpohndgkim.jpg",
       "building": [
         {
-          "id": "53cfc1ec-3b91-4f1c-a362-a83a59dc7e54",
-          "userid": "2fc7f7ce-0b8a-47d7-ba93-f259dfcf4907",
-          "name": "1",
-          "roomamount": 0,
-          "phone": "1",
-          "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619000784/xm7krdmwsdzehunjannr.jpg",
-          "room": []
+          "id": "c0a01267-8f31-4f58-896f-0b9ea70f605f",
+          "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+          "name": "Main Building",
+          "roomamount": 1,
+          "phone": "053384462",
+          "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619427728/rixc5affvbdr32r4rpy3.jpg",
+          "room": [
+            {
+              "id": "fec864d9-3591-4344-a46d-d0d297a7d3ed",
+              "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+              "name": "MB-101",
+              "capacity": "49",
+              "equipment": "Projector",
+              "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619428049/zbreq9abnjqal4yyafwr.jpg",
+              "class": [
+                {
+                  "id": "31d49e9a-7644-4578-b7bf-598ee8270309",
+                  "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+                  "lecturer": "",
+                  "time": "",
+                  "day": "",
+                  "studentgroup": "",
+                  "module": ""
+                }
+              ],
+              "classcount": 1
+            },
+            {
+              "id": "670264fc-6a80-49c6-b31f-724bcbeec4e0",
+              "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+              "name": "MB-102",
+              "capacity": "56",
+              "equipment": "Projector",
+              "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619434715/l5mza81egowpgf2daoex.jpg",
+              "classcount": 0,
+              "class": []
+            }
+          ]
         },
         {
-          "id": "6ff681cf-7d52-4c32-b9fd-0a4a4c317771",
-          "userid": "2fc7f7ce-0b8a-47d7-ba93-f259dfcf4907",
-          "name": "2",
+          "id": "63eeef1f-625a-4f67-a9c7-81b08f2cb473",
+          "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+          "name": "IT Building",
           "roomamount": 0,
-          "phone": "2",
-          "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619000906/jejk6wnzjv9kf4ubozmz.jpg",
+          "phone": "053465748",
+          "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619427759/eajhe38lse7u19l8aoey.jpg",
           "room": []
         }
-      ]
+      ],
+      "buildcount": 2
+    },
+    {
+      "id": "09760e19-ee5a-4e79-92f8-daed5c4007dd",
+      "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+      "name": "College Street",
+      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619426726/srphls9jp547ofbl2l0q.jpg",
+      "building": [],
+      "buildcount": 0
+    },
+    {
+      "id": "3d6a2444-3e44-4279-beba-79d117f94ecd",
+      "userid": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+      "name": "Granary",
+      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619426745/vm5pex0lnwycytgobft3.jpg",
+      "building": [],
+      "buildcount": 0
+    },
+    {
+      "id": "e89c7b0b-970b-4ec0-90d0-479cc3c0cf26",
+      "userid": "3ca119ed-cc11-431f-8590-32c58c727551",
+      "name": "Main Campus",
+      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619440498/px4gogglglehwvf9mpzo.jpg",
+      "bulildcount": 0,
+      "building": [
+        {
+          "id": "084978fe-1dcc-4c98-8c7e-6a278b8d4759",
+          "userid": "3ca119ed-cc11-431f-8590-32c58c727551",
+          "name": "Main Building",
+          "roomamount": 1,
+          "phone": "0851121720",
+          "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619440586/mqdxc5aodikvzr39m8md.jpg",
+          "room": [
+            {
+              "id": "73055e64-07a8-4526-a45c-a2cc8577f29b",
+              "userid": "3ca119ed-cc11-431f-8590-32c58c727551",
+              "name": "MB-101",
+              "capacity": "49",
+              "equipment": "Projector",
+              "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619440611/tctpp06fdkaffxhiu4vm.jpg",
+              "classcount": 0,
+              "class": []
+            }
+          ]
+        }
+      ],
+      "buildcount": 1
     }
   ]
 }
