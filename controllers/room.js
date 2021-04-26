@@ -13,7 +13,7 @@ const room = {
     const loggedInUser = accounts.getCurrentUser(request);
     logger.debug(`Reading Room ${roomId} from building ${buildingId} from Campus ${campusId}`);
     const viewData = {
-      title: 'room',
+      title: 'Classes',
       campus: campusStore.getCampus(campusId),
       building: campusStore.getBuilding(campusId, buildingId),
       room: campusStore.getRoom(campusId, buildingId, roomId),

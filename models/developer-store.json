@@ -1,13 +1,13 @@
-{"developerCollection":
-  [
+{
+  "developerCollection": [
     {
-      "name":"Ben Capper",
+      "name": "Ben Capper",
       "course": "Software Systems Development",
       "year": "Year 2",
       "phone": "0851121720",
       "email": "BenCapper19@gmail.com",
       "github": "BenCapper"
-      
     }
-  ]
+  ],
+  "commentCollection": []
 }

@@ -1,13 +1,12 @@
 {{> menu}}
 
       <section class="ui two column grid segment">
-        <div class="ui column">
+        <div class="ui nine wide column">
           <h2 id="dodge">{{title}}</h2>
             Welcome {{fullname}}!<br><br>
-            This app will allow users to add college campus', buildings and rooms relevent to them, to their list.
+            This app will allow users to add college campuses, buildings and rooms relevent to them, to their list.
             Classes can then be scheduled, updated, and deleted by selecting a room.
-           <br><br> The user may also save a note for each class.<br><br>
-            A list of every scheduled class the user has created can be found via the "My Classes" tab.
+           <br><br> The user may comment on the app via the about page.
             
           <br><br>
            <a class="ui blue button" href="/dashboard">
@@ -37,7 +36,7 @@
           </div>
           <div class="statistic">
           <div class="value">
-            22
+            {{userroom}}
           </div>
           <div class="label">
             Rooms
@@ -45,7 +44,7 @@
           </div>
           <div class="statistic">
           <div class="value">
-            22
+            {{userclass}}
           </div>
           <div class="label">
             Classes
@@ -53,16 +52,13 @@
           </div>
         </div>
           
-
-          
-          
         <h2 id="dodge">
-          App Statistics
-          </h2>
+            Averages
+        </h2>
           <div class="ui tiny statistics">
             <div class="statistic">
             <div class="value">
-              22
+              {{avgcampus}}
             </div>
             <div class="label">
               Campuses
@@ -70,7 +66,7 @@
             </div>
           <div class="statistic">
           <div class="value">
-            31,200
+            {{avgbuilding}}
           </div>
           <div class="label">
             Buildings
@@ -78,7 +74,7 @@
           </div>
           <div class="statistic">
           <div class="value">
-            22
+            {{avgroom}}
           </div>
           <div class="label">
             Rooms
@@ -86,13 +82,14 @@
           </div>
           <div class="statistic">
           <div class="value">
-            22
+            {{avgclass}}
           </div>
           <div class="label">
             Classes
           </div>
           </div>
-        </div> 
+        </div>
+          
           
         <h2 id="dodge">
           Total App Statistics
@@ -124,7 +121,7 @@
           </div>
           <div class="statistic">
           <div class="value">
-            22
+            {{totalclass}}
           </div>
           <div class="label">
             Classes
@@ -140,10 +137,48 @@
           </div>
         </div>
           
+        <h2 id="dodge">
+          Other Statistics
+        </h2>
+          <div class="ui tiny statistics">
+          <div class="statistic">
+          <div class="value">
+            {{mostcampus}}
+          </div>
+          <div class="label">
+            Most Campuses
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            {{mostbuilding}}
+          </div>
+          <div class="label">
+            Most Buildings
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            {{mostroom}}
+          </div>
+          <div class="label">
+            Most Rooms
+          </div>
+          </div>
+          <div class="statistic">
+          <div class="value">
+            {{mostclass}}
+          </div>
+          <div class="label">
+            Most Classes
+          </div>
+          </div>
+        </div>
+          
           
       </div>
-        <div class="ui column">
-
+        <div class="ui seven wide column">
+<br><br>
               <img
                 class="ui rounded image"
                 src="https://cdn.glitch.com/57c0dc07-1113-44d7-8ab8-ff7583315525%2FWaterford-Institute-of-Technology-4.png?v=1614693439498"

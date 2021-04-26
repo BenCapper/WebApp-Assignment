@@ -1,3 +1,6 @@
+{{#unless campus}}
+  <h3 class="ui center aligned message">Add a Campus to your list!</h3>
+{{/unless}}<br><br>
 <div class="ui centered cards">
   {{#each campus}}
     <div class="ui card">
@@ -5,14 +8,17 @@
         <img src="{{picture}}">
       </div>
       <div class="content">
-        <a class="header">{{name}}</a>
+        <a class="header" id="dodge"><b>{{name}}</b></a>
       </div>
       <div class="extra content">
-        <a href="/campus/{{id}}" class="ui icon button">
-          <i class="icon folder open"></i>
+      <p>
+        <b>Number of Buildings: {{buildcount}}</b>
+        </p>
+        <a href="/campus/{{id}}" >
+          <i class="icon open folder" id="dodge"></i>
         </a>
-        <a href="/dashboard/{{../dashboard.id}}/deleteCampus/{{id}}" class="ui icon button">
-          <i class="icon trash"></i>
+        <a href="/dashboard/{{../dashboard.id}}/deleteCampus/{{id}}">
+          <i class="icon trash" id="dodge"></i>
         </a>
       </div>
     </div>

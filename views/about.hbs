@@ -1,13 +1,42 @@
 {{> menu id="about"}}
 
-<section class="ui center aligned middle aligned segment">
-  <h2 class="ui header">
-    The W.I.T Reservations Team:
+<section class="ui segment">
+  <h2 class="ui center aligned header">
+    The W.I.T Class Manager Team:
   </h2>
 
-  <div class="ui centered cards">
+  <div class="ui center aligned centered cards">
   {{#each developers}}
     {{> card}}
     {{/each}}
   </div>
+
+  <div class="ui left aligned comments">
+  <h3 class="ui dividing header">Comments</h3>
+  {{#each comments}}
+  <div class="comment">
+    <a class="avatar">
+      <img src="{{image}}" class="ui avatar image">
+    </a>
+    <div class="content">
+      <a class="author">{{name}}</a>
+      <div class="metadata">
+        <span class="date">{{formatDate date}}, {{time}}</span>
+      </div>
+      <div class="text">
+        {{comment}}
+      </div>
+      <div class="actions">
+        <a href="/about/deleteComment/{{id}}/deleteUser/{{userid}}"><i class="icon trash" id="dodge"></i> </a>
+      </div>
+    </div>
+  </div>
+  {{/each}}<br>
+  <form class="ui form" method="POST" action="/about/addComments" enctype="multipart/form-data">
+    <div class="field">
+      <input type="text"  name="comment" autofocus required></textarea>
+    </div>
+    <button class="ui blue submit button">Add Comment</button>
+  </form>
+</div>
 </section>

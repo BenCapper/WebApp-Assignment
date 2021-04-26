@@ -1,85 +1,22 @@
 {
   "users": [
     {
-      "firstName": "homer",
-      "lastName": "simpson",
-      "email": "homer@simpson.com",
-      "password": "secret",
-      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
-    },
-    {
-      "firstName": "marge",
-      "lastName": "simpson",
-      "email": "marge@simpson.com",
-      "password": "secret",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
-    },
-    {
-      "firstName": "Ben",
-      "lastName": "Capper",
-      "email": "ben.com",
-      "password": "root",
-      "id": "e705639a-0e7a-4963-9389-d8096af91679"
-    },
-    {
-      "firstName": "Ben",
-      "lastName": "Capper",
-      "email": "ben.com1",
-      "password": "root",
-      "id": "4f5f1859-8101-4213-bb36-0890c1ff1f02"
-    },
-    {
-      "firstName": "Ben",
-      "lastName": "Capper",
-      "email": "ben.com12",
-      "password": "root",
-      "id": "86c37ecd-4a6d-4108-a903-dbbe37f4729d"
-    },
-    {
-      "firstName": "Ben",
-      "lastName": "Capper",
-      "email": "ben.com123",
-      "password": "root",
-      "id": "6ceb598e-c59b-4ea0-b120-e05b3d7394ee"
-    },
-    {
-      "firstName": "Ben",
-      "lastName": "Capper",
-      "email": "ben.com1234",
-      "password": "root",
-      "id": "da71cbce-7d60-4b0a-bb8a-ef222e630289"
-    },
-    {
-      "firstName": "b",
-      "lastName": "c",
-      "email": "ben.com1234h",
-      "password": "root",
-      "id": "97bb5d69-735c-4c69-860c-75b726251218",
-      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1618594507/ins1r8ddkkfwsgeukqwi.jpg"
-    },
-    {
-      "firstName": "gsadsa",
-      "lastName": "asdasd",
-      "email": "ben.com1234asdsa",
-      "password": "root",
-      "id": "7d90c69a-c17a-4f9b-be22-377f6b94597f",
-      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1618594899/vepvfrmtpf0vdn9ncshh.jpg"
-    },
-    {
       "firstName": "Ben",
       "lastName": "Capper",
       "email": "ben.com.capper",
       "password": "root",
-      "id": "2fc7f7ce-0b8a-47d7-ba93-f259dfcf4907",
-      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1618830791/jqennkktznagnaov75vq.jpg"
+      "id": "72b23eed-9bb9-4ad0-bc2a-70c11b9bfaf0",
+      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619426156/hlr7vhc9tkwcequpu5rr.jpg"
     },
     {
-      "firstName": "john",
-      "lastName": "dfs",
+      "firstName": "Ben",
+      "lastName": "P",
       "email": "ben.com.capper1",
       "password": "root",
-      "id": "a4dcfdb5-128a-46af-8b12-0d4c90dda14c",
-      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1618918547/ximxmyhjwth5pqn43kfy.jpg"
+      "id": "3ca119ed-cc11-431f-8590-32c58c727551",
+      "picture": "http://res.cloudinary.com/bencapper-web-dev/image/upload/v1619440217/rzbqwvtxdugnaebywelv.jpg"
     }
-  ]
+  ],
+  "commentCollection": [],
+  "userCollection": []
 }

@@ -27,6 +27,8 @@ router.get('/start', start.index);
 router.get('/about', about.index);
 router.get('/dashboard', dashboard.index);
 router.get('/dashboard/deleteCampus/:id', dashboard.deleteCampus);
+router.get('/about/deleteComment/:id/deleteUser/:userid', about.deleteComment);
+router.post('/about/addComments', about.addComments);
 router.post('/dashboard/addCampus', dashboard.addCampus);
 
 router.get('/campus/:id', campus.index);

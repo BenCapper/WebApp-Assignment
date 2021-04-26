@@ -42,7 +42,7 @@ app.engine('.hbs', exphbs({
       return options      
     },
     
-    formatDate: function(date) {
+    formatDate: function(date, time) {
       let dateCreated = new Date(date);
       let day = dateCreated.getDay();
       let dateNum = dateCreated.getDate();

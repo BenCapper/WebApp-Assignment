@@ -12,6 +12,9 @@
     </tr>
   </thead>
 <tbody>
+  {{#unless room.class}}
+  <h3 class="ui center aligned message">Add a Class to your list!</h3>
+{{/unless}}
     {{#each room.class}}
     <form class = "ui stacked segment form" action="/room/{{../campus.id}}/build/{{../building.id}}/getRoom/{{../room.id}}/getClass/{{id}}/updateClass/{{id}}" method="POST">
     <tr class="eight fields">
